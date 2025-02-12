@@ -1,0 +1,7 @@
+My_Travelrecommendationapp URLs:
+
+    GitHub Repository URL:
+ 	https://github.com/Emmanuelakol/My_TravelRecommendationapp
+
+    GitHub Pages URL: 
+	https://emmanuelakol.github.io/My_TravelRecommendationapp/travel_recommendation.html

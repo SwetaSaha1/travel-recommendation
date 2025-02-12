@@ -1,0 +1,472 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.897); /* Dark background with some transparency */
+    padding: 10px;
+}
+
+nav h1 {
+    color: white;
+    margin: 0;
+    font-size: 32px;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between; /* Evenly distribute items */
+    align-items: center;
+    flex: 2;
+}
+
+nav a {
+    padding-right: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+
+nav input[type="text"] {
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+}
+
+nav button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2ecc71; /* Blue-greenish color */
+    color: white;
+    cursor: pointer;
+}
+
+nav button + button {
+    margin-left: 5px;
+}
+  
+  /* Basic CSS for the form elements */
+  body {
+    font-family: Arial, sans-serif;
+    /* margin: 20px; */
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    text-align:left
+  }
+  
+  div {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: inline-block;
+    width: 100px;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  select {
+    width: 200px;
+    padding: 5px;
+  }
+  
+  button {
+    padding: 7px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Basic CSS for the report section */
+  h2 {
+    margin-top: 30px;
+  }
+  
+
+
+.container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('back.jpeg');
+    z-index: -1;
+    background-size: cover;
+    filter: brightness(0.5); /* Adjust opacity if needed */
+}
+
+.half-content {
+    position: absolute;
+    padding: 5%;
+    width: 50%;
+    color: white;
+}
+
+.content {
+    position: absolute;
+    margin: 5%;
+    color: white;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.social-icons {
+    position: absolute;
+    left: 2%;
+    bottom: 5%;
+    display: flex;
+    font-size:24px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.icon {
+    margin-bottom: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.icon i {
+    margin-right: 10px;
+}
+  
+.searchContainer {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+}
+
+#conditionInput {
+    width: 100%; /* Full width of the parent container */
+    padding: 10px; /* Padding inside the input for better spacing */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size for the text inside the input */
+    color: #333; /* Text color */
+    background-color: #fff; /* White background */
+    transition: border-color 0.3s ease; /* Smooth transition for border color on focus */
+}
+
+/* Change border color on focus */
+#conditionInput:focus {
+    border-color: #2ecc71; /* Green border on focus */
+    outline: none; /* Remove default outline */
+}
+
+
+#btnSearch,
+#btnReset {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2ecc71; /* Blue-greenish color */
+    color: white;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.team-member {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#results {
+    float: right;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 90%;
+    overflow-y: auto;
+}
+
+.result-item {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.result-item h2 {
+    padding-left: 10px;
+}
+
+.result-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.result-item p {
+    padding-left: 10px;
+}
+
+.result-item a {
+    padding-left: 10px;
+}
+
+/* Title Button Styling (e.g., CEO) */
+.title-button {
+    background-color: blue; /* Blue fill color for button */
+    color: white; /* White text color for button text */
+    border-radius: 20px; /* Rounded corners for button shape */
+    border: none; /* Remove default border styling */
+    padding: 5px 10px; /* Padding inside button for size and spacing */
+    font-size: 14px; /* Font size for button text */
+}
+
+.title-button:hover {
+    background-color: #0056b3; /* Darker blue on hover effect */
+}
+
+/* Team Member Name Styling */
+.team-member h3 {
+    margin-top: 0; /* Remove margin above name to align with profile photo */
+}
+
+/* Team Member Description Styling */
+.team-member p {
+   font-size: 14px;
+}
+
+
+.profile-photo {
+            font-size: 80px; /* Adjust icon size */
+            color: white; /* Icon color */
+            position: absolute; /* Positioning for top left corner of the card */
+            top: 10px; /* Adjust position from the top of the card */
+            left: 10px; /* Adjust position from the left of the card */
+        }
+
+        .team-member {
+            position: relative; /* Required for positioning the icon */
+            background-color: rgba(0, 0, 0, 0.493); /* Slightly dark transparent background */
+            color: white; /* White text for readability */
+            border-radius: 5px; /* Rounded corners for cards */
+            padding: 20px; /* Padding inside each card */
+            margin: 10px; /* Space between cards */
+            width: calc(30% - 20px); /* Card width for three columns */
+        }
+        
+        .member-info {
+            margin-left: 100px; /* Space for icon on the left */
+        }
+
+        /* travels.css */
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+/* ... (rest of your CSS styles) ... */
+
+.container {
+    position: relative; /* Important for positioning social icons */
+    display: flex; /* Use flexbox for layout */
+}
+
+.content {
+    /* ... (your existing content styles) ... */
+    flex: 1; /* Allow content to take up available space */
+}
+
+.social-icons {
+    position: absolute; /* Position the icons */
+    top: 50%; /* Vertically center */
+    right: 20px; /* Adjust horizontal position */
+    transform: translateY(-50%); /* Center vertically */
+    display: flex;
+    flex-direction: column; /* Stack icons vertically */
+    gap: 10px; /* Space between icons */
+}
+
+.social-icons a {
+    color: #333; /* Icon color */
+    font-size: 20px; /* Adjust size */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+.social-icons a:hover {
+    color: #007bff; /* Example hover color */
+}
+
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+/* ... (your other styles) ... */
+
+.container {
+    position: relative;
+    display: flex; /* Needed for proper alignment */
+    align-items: flex-start; /* Align items to the top of the container */
+}
+
+.content {
+    flex: 1; /* Takes available space */
+    padding: 20px; /* Add some padding around the content */
+    margin-left: 20px; /* Add left margin to create space for the line */
+}
+
+.about-us-header {
+    display: flex; /* Use flexbox for title and line */
+    align-items: center; /* Vertically align title and line */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+.about-us-header h1 {
+    margin-right: 20px; /* Space between title and line */
+    text-align: left;
+}
+
+.vertical-line {
+    width: 2px;
+    height: 50px; /* Adjust height as needed */
+    background-color: #ccc; /* Color of the line */
+}
+
+.social-icons {
+    position: relative; /* No longer absolute */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px; /* Add some top margin */
+    margin-right: 20px;
+}
+
+.profile-photo {
+            font-size: 80px; /* Adjust icon size */
+            color: white; /* Icon color */
+            position: absolute; /* Positioning for top left corner of the card */
+            top: 10px; /* Adjust position from the top of the card */
+            left: 10px; /* Adjust position from the left of the card */
+        }
+
+.team-member {
+            position: relative; /* Required for positioning the icon */
+            background-color: rgba(0, 0, 0, 0.7); /* Slightly dark transparent background */
+            color: white; /* White text for readability */
+            border-radius: 8px; /* Rounded corners for cards */
+            padding: 20px; /* Padding inside each card */
+            margin: 10px; /* Space between cards */
+            width: calc(30% - 20px); /* Card width for three columns */
+        }
+        
+        .member-info {
+            margin-left: 100px; /* Space for icon on the left */
+            text-align: left;
+        }
+
+
+#destinations-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to new lines */
+    gap: 20px; /* Spacing between countries */
+}
+
+.country {
+    border: 1px solid #ccc;
+    padding: 20px;
+    flex: 1 0 calc(33.33% - 20px); /* Adjust width for 3 columns (example) */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+.cities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Spacing between cities */
+}
+
+.city {
+    border: 1px solid #eee;
+    padding: 10px;
+    flex: 1 0 calc(50% - 10px); /* Adjust width for 2 cities per country (example) */
+    box-sizing: border-box;
+}
+
+.city img {
+    max-width: 100%; /* Make images responsive */
+    height: auto;
+}
+
+
+/* Team Members Container */
+.team-container {
+    display: flex; /* Use Flexbox for horizontal layout */
+    justify-content: space-around; /* Distribute space evenly */
+    align-items: center; /* Center items vertically */
+    margin-top: 20px; /* Space above the team members section */
+}
+
+.team-member {
+    text-align: center; /* Center text within each team member box */
+    margin: 0 15px; /* Space between team members */
+}
+
+/* Optional: Add some styling for better visuals */
+.team-member h3 {
+    margin-bottom: 5px; /* Space below the name */
+}
+
+.team-member p {
+    color: #666; /* A lighter color for job titles */
+}

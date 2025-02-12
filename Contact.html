@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>My TravelRecommendationapp</title>
+        <link rel="stylesheet" href="./travels.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    </head>
+    <body>
+        <nav>
+            
+            <ul>
+                <li>
+                    <img src="..\My_TravelRecommendationapp\logo.png" alt="My Company Logo" style="height: 50px;"/> <!-- Logo Image -->
+                </li>
+                <li><h1>My TravelRecommendationapp</h1></li>
+                <li>
+                    <a href="./travel_recommendation.html" id="home">Home </a>
+                    <a href="./About.html" id="contact">About Us </a>
+                    <a href="./Contact.html" id="contact">Contact Us </a>
+                </li>
+                <li></li>
+            </ul>
+        </nav>
+        
+        <div class="container">
+            <div class="background-image"></div>
+            <div class="content">
+                <h1>Contact Us</h1>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" onclick="thankyou()">Submit</button>
+                </form>
+            </div>
+        </div>
+        <script src="./travel.js"></script>
+    </body>
+</html>
